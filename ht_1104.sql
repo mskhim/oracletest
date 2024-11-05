@@ -34,10 +34,10 @@ select DISTINCT DEPARTMENT_ID from employees;
 --2008년 이후에 입사한 직원조사
 select * from employees where HIRE_DATE<=TO_DATE('2008/01/01','YYYY/MM/DD HH24:MI:SS') order by HIRE_DATE;
 -------------------------------------------------------------------------------
-select * from employees where  LAST_NAME LIKE 'A%' OR LIKE 'B%' OR LIKE 'C%');
+select * from employees where  LAST_NAME LIKE 'A%' OR LAST_NAME LIKE 'B%' OR LAST_NAME LIKE 'C%';
 
 
--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------과제 시작
 select '사번 : '||employee_id||', 이름 : '||first_name||last_name 샘, salary from employees where salary >=3000;
 --<문제> EMPLOYEES 테이블에서 부서번호가 110번인 직원에 관한 모든 정보만 출력하라.
 select * from employees where employee_id ='110';
@@ -62,4 +62,14 @@ select EMPLOYEE_ID,FIRST_NAME,last_name,salary from employees order by salary de
 --<문제> 입사일이 가장 최근인 직원 순으로 직원번호, 이름, 입사일을 출력하라. 
 select EMPLOYEE_ID,FIRST_NAME,last_name,HIRE_DATE from employees order by HIRE_DATE;
 desc employees;
-
+--jking 이란 이메일을 가진 사람의 이름과 급여, 커미션 출력  
+select first_name, SALARY, COMMISSION_PCT FROM EMPLOYEES WHERE UPPER(EMAIL) LIKE('JKING%');
+----------------------------------10장 select 함수
+--문자열 일부를 추출하는 SUBSTR() 20번 부서 사원들 중의 입사년도 알아내기
+SELECT *FROM EMPLOYEES;
+SELECT EMPLOYEE_ID, FIRST_NAME, SUBSTR(HIRE_DATE,1,2)
+FROM EMPLOYEES
+WHERE DEPARTMENT_ID=20;
+--날짜와 날짜사이의 개월 수를 구하는 함수 MONTHS_BETWEEN()
+SELECT FIRST_NAME, ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE)) 근무개월,ROUND(SYSDATE-HIRE_DATE) 근무일수,HIRE_DATE 
+FROM EMPLOYEES;
