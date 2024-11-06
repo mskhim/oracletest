@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="498D367F-D9B2-44F2-0578-D6F688267CED" name="CUST">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:20:26 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="EEA407BA-DFA0-CDCF-A8C5-4FF68192EC52">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:25:56 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="52E9D76D-3F92-CB86-65D5-4BD00E309E91">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:25:56 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="586BCD25-6E89-91BE-162D-6A9BC5341343">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:25:56 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth" id="EC9A59E2-A817-3458-95A9-72AB125DD083">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:29:05 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pnum" id="1B5D3BE6-280C-FF3E-D0EE-DF87FFB945C7">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:29:05 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="95AD3F09-AB8D-65EB-EADB-A09339770FB5">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:29:05 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="point" id="FAEE7D96-BBED-1E37-AB14-989D5F6E1ECA">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:29:05 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE7E8B61-64CD-B635-A2F6-E3F1395C5A72" name="CUST_CODE_PK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:25:56 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEA407BA-DFA0-CDCF-A8C5-4FF68192EC52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ADDC660-3033-5F3E-82DC-8965A2983066" name="CUST_PNUM_UK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:31:30 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B5D3BE6-280C-FF3E-D0EE-DF87FFB945C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CUST1106" id="88315EB4-55F4-CDFF-E93D-6404A48E85FE" version="3.5">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 01:16:45 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>88315EB4-55F4-CDFF-E93D-6404A48E85FE</designId>
+</OSDM_Design>
