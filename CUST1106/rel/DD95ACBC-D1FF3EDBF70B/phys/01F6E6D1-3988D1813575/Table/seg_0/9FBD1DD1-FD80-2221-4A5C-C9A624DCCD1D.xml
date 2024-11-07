@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DEPARTMENTS" directorySegmentName="seg_0" id="9FBD1DD1-FD80-2221-4A5C-C9A624DCCD1D">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>82B9A086-23B1-E146-E435-7DFBB8F7E338</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MANAGER_ID" id="24888734-6331-C548-D273-432AA7FD63E8">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_NAME" id="863DE9E6-77D2-2C89-341A-1BA2BC74334F">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION_ID" id="BAA7C5AA-8190-7E8B-C4BC-651959302997">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="C2536BB2-17F2-39F4-D0B7-D97B7C1651E3">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPT_LOCATION_IX" id="87F7F34A-3448-8851-C81F-E668B0EE776A">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPT_ID_PK" id="89AE84C5-2251-1641-E79A-E8E46F0306F9">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DEPT_LOC_FK" id="0B90F67B-2EB2-DA1D-FCDC-9AD41A5A4230">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DEPT_MGR_FK" id="A94CFDDD-9B59-065B-D377-201A208158F0">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPT_ID_PK" id="19F11C2A-5BEB-BA84-5998-3FE7E359BFA3">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<existingIndex>89AE84C5-2251-1641-E79A-E8E46F0306F9</existingIndex>
+<indexSegment>941C218D-E44A-7CAC-253A-25190C0A7C98</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

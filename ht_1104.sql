@@ -1,75 +1,127 @@
-select *from tab;
---이 데이터 베이스의 테이블들
-desc employees;
--- employees의 테이블 구조(멤버변수와 타입을 보여달라)
-select * from employees;
---employees 속에 들어있는 records(객체들)를 보여달라.
-select * from departments;
---departments 부분의 recoreds를 확인하자.
-desc departments;
---departments 부분의구조를 확인하자.
-select department_id, department_name from departments;
---departments_id,departments_name만 출력 되게
-select department_id as "부서번호", department_name as "부서명" from departments;
-select department_id as DEP_NO, department_name as DEP_NAME from departments;
-select department_id as "DEP NO", department_name as "DEP NAME" from departments;
---필드명에 별칭 사용하기
-select 5 + 5 from dual;
-select 5 || 5 from dual;
-desc dual;
-select * from dual;
-select 5 + 5 from employees;
-select first_name, job_id from employees;
-select first_name||'의 직급은 ' ||job_id||'입니다.' as "이름과 직급" from employees;
---+와 ||
-select DISTINCT job_id from employees;
---중복되지 않게 보여주기 distinct
---<문제> EMPLOYEES 테이블의 모든 내용 출력 
+CREATE TABLE EMP01 (
+    NO NUMBER(4) NOT NULL,
+    NAME VARCHAR2(20) NOT NULL,
+    SALARY NUMBER(7,2) DEFAULT 1000.0,
+    CONSTRAINT EMP01_NO_PK PRIMARY KEY (NO),
+    CONSTRAINT EMP01_NAME_UK UNIQUE (NAME)
+);
+ DROP TABLE EMP01;
+ 
+select * from tab;
+--휴지통 보는법
+select * from recyclebin;
+
+SELECT COUNT(*) FROM EMPLOYEES;
+--테이블복사(제약조건은 복사되지 않는다)
+CREATE TABLE EMP02
+AS 
 SELECT * FROM EMPLOYEES;
---<문제> 사원의 이름과 급여와 입사일자 만을 출력하는 SQL 문을 작성해보자.
-SELECT FIRST_NAME|| LAST_NAME AS NAME , SALARY, HIRE_DATE FROM EMPLOYEES;
---<문제>직원들이 어떤 부서에 소속되어 있는지 소속 부서번호(DEPARTMENT_ID) 출력하되 중복되지 않고 
---한번씩 출력하는 쿼리문을 작성하자. 
-select DISTINCT DEPARTMENT_ID from employees;
---2008년 이후에 입사한 직원조사
-select * from employees where HIRE_DATE<=TO_DATE('2008/01/01','YYYY/MM/DD HH24:MI:SS') order by HIRE_DATE;
--------------------------------------------------------------------------------
-select * from employees where  LAST_NAME LIKE 'A%' OR LAST_NAME LIKE 'B%' OR LAST_NAME LIKE 'C%';
+DESC EMPLOYEES;
+DESC EMP02;
+--제약조건 걸기 primary key
+ALTER table EMP02 ADD CONSTRAINT EMP02_emp_id_pk PRIMARY KEY(employee_id);
+ALTER table EMP02 ADD CONSTRAINT EMP02_EMAIL_UQ UNIQUE(EMAIL);
+--제약조건 삭제하기 unique
+ALTER table EMP02 DROP CONSTRAINT EMP02_EMAIL_UQ;
+--제약조건 검색 확인하기
+select * from user_constraints;
+select table_name, constraint_name,constraint_type from user_constraints where table_name = 'EMP02';
+--컬럼 추가
+ALTER TABLE emp01 ADD job varchar2(10) not null;
+desc emp01;
+--컬럼제거
+alter table emp01 drop column job;
+--컬럼변경(기존값이 존재할때 타입변경불가 사이즈는 큰것으로는 변경 가능.)
+ALTER TABLE emp01 MODIFY job number(10) default 0;
+--컬럼 이름 변경( create, alter, drop rename, truncate)
+ALTER TABLE emp01 rename column job to job2;
+--테이블 이름 변경
+rename EMP01 to EMP10;
+--실습
+create table CUST(
+code char(7) NOT NULL,
+name VARCHAR2(10)NOT NULL,
+gender CHAR(1) NOT NULL check(gender in('M','W')),
+birth CHAR(8) NOT NULL,
+pnum VARCHAR2(16),
+email VARCHAR2(30),
+point NUMBER(10)
+);
+
+alter table CUST ADD CONSTRAINT CUST_code_pk PRIMARY KEY(code);
+alter table CUST ADD CONSTRAINT CUST_pnum_uk UNIQUE(pnum);
+alter table CUST MODIFY gender CHAR(1) NOT NULL;
+alter table CUST DROP CONSTRAINT SYS_C008372;
+alter table CUST ADD CONSTRAINT CUST_gender_ck check(gender in('M','W'));
+alter table CUST MODIFY point NUMBER(10) default 0;
+desc CUST;
+
+insert into CUST VALUES('1234567','kms','M','19960825',null,null,null);
+insert into CUST(CODE,NAME,GENDER,BIRTH) VALUES('1234568','kmL','M','19960825');
+update CUST set NAME='kkl' where code='1234567';
+
+delete from CUST WHERE NAME='kms';
+select * from CUST;
+--department 테이블 생성
+create table dept
+AS
+select * from DEPARTMENTS;
+delete from dept;
+ROLLBACK;
+desc dept;
+select * from dept;
+
+insert into dept select * from departments;
+--과제 학생테이블 만들기
 
 
--------------------------------------------------------------------------------과제 시작
-select '사번 : '||employee_id||', 이름 : '||first_name||last_name 샘, salary from employees where salary >=3000;
---<문제> EMPLOYEES 테이블에서 부서번호가 110번인 직원에 관한 모든 정보만 출력하라.
-select * from employees where employee_id ='110';
---<문제> EMPLOYEES 테이블에서 급여가 5000미만이 되는 직원의 정보 중에서 사번과 이름, 급여를 출력 
---하라. 
-select EMPLOYEE_ID,FIRST_NAME,LAST_NAME ,SALARY from employees where salary<5000;
---<문제> 이름이 John인 사람의 직원번호와 직원명과 직급을 출력하라. 
-select EMPLOYEE_ID,FIRST_NAME,LAST_NAME,JOB_ID from employees where First_NAME='John';
---<문제>급여가 5000에서 10000이하 직원 정보 출력 
-select * from employees where salary>=5000 AND salary <=10000;
---<문제> 직원번호가 134이거나 201이거나 107인 직원 정보 출력
-select * from employees where EMPLOYEE_ID=134 OR EMPLOYEE_ID=201 OR EMPLOYEE_ID=107;
---<문제> 급여가 2500에서 4500까지의 범위에 속한 직원의 직원번호, 이름, 급여를 출력하라. 
---(AND 연산자와 BETWEEN AND 연산자 사용 두개모두 사용해서 보여줄것) 
-select EMPLOYEE_ID,FIRST_NAME,SALARY from employees where salary BETWEEN 2500 AND 4500;
---<문제> 이름에 a를 포함하지 않은 직원의 직원번호, 이름을 출력하라. 
-select EMPLOYEE_ID,FIRST_NAME,last_name from employees where first_name not like'%a%';
---<문제> 자신의 직속상관이 없는 직원의 전체 이름과 직급과 직원번호을 출력하라 
-select EMPLOYEE_ID,FIRST_NAME,last_name,JOB_ID from employees where manager_id is null;
---<문제> 직원번호, 이름, 급여를 급여가 높은 순으로 출력하라.
-select EMPLOYEE_ID,FIRST_NAME,last_name,salary from employees order by salary desc;
---<문제> 입사일이 가장 최근인 직원 순으로 직원번호, 이름, 입사일을 출력하라. 
-select EMPLOYEE_ID,FIRST_NAME,last_name,HIRE_DATE from employees order by HIRE_DATE;
-desc employees;
---jking 이란 이메일을 가진 사람의 이름과 급여, 커미션 출력  
-select first_name, SALARY, COMMISSION_PCT FROM EMPLOYEES WHERE UPPER(EMAIL) LIKE('JKING%');
-----------------------------------10장 select 함수
---문자열 일부를 추출하는 SUBSTR() 20번 부서 사원들 중의 입사년도 알아내기
-SELECT *FROM EMPLOYEES;
-SELECT EMPLOYEE_ID, FIRST_NAME, SUBSTR(HIRE_DATE,1,2)
-FROM EMPLOYEES
-WHERE DEPARTMENT_ID=20;
---날짜와 날짜사이의 개월 수를 구하는 함수 MONTHS_BETWEEN()
-SELECT FIRST_NAME, ROUND(MONTHS_BETWEEN(SYSDATE,HIRE_DATE)) 근무개월,ROUND(SYSDATE-HIRE_DATE) 근무일수,HIRE_DATE 
-FROM EMPLOYEES;
+
+create table STUDENT(
+student_num NUMBER(8),
+name VARCHAR(5) NOT NULL,
+korean NUMBER(3) default 0 NOT NULL,
+english NUMBER(3) default 0 NOT NULL,
+math NUMBER(3) default 0 NOT NULL,
+sum NUMBER(3) default 0 NOT NULL,
+avg NUMBER(3) default 0 NOT NULL
+);
+alter table STUDENT MODIFY name VARCHAR(15);
+alter table STUDENT ADD dept_code number(4);
+alter table STUDENT ADD CONSTRAINT STUDENT_student_num_pk PRIMARY KEY(student_num);
+alter table STUDENT ADD CONSTRAINT STUDENT_dept_code_fk FOREIGN KEY(dept_code) REFERENCES DEPARTMENT(dept_code);
+alter table STUDENT DROP CONSTRAINT STUDENT_dept_code_fk;
+alter table STUDENT ADD CONSTRAINT STUDENT_dept_code_fk FOREIGN KEY(dept_code) REFERENCES DEPARTMENT(dept_code) ON delete CASCADE;
+insert into STUDENT VALUES(00000003,'김민석3',50,50,50,0,0,1);
+insert into STUDENT(student_num, name, dept_code) VALUES(00000008,'김민석8',1);
+
+
+--drop TRIGGER UPDATE_dept_code;
+--외래키 업데이트 트리거
+CREATE TRIGGER UPDATE_dept_code
+AFTER UPDATE ON DEPARTMENT
+FOR EACH ROW
+BEGIN
+    UPDATE STUDENT
+    SET dept_code = :NEW.dept_code
+    WHERE dept_code = :OLD.dept_code;
+END;
+
+
+
+create table DEPARTMENT(
+dept_code number(4)
+);
+alter table DEPARTMENT ADD dept_name VARCHAR(15) NOT NULL;
+
+
+insert into DEPARTMENT VALUES(4,'물리학과');
+delete from DEPARTMENT;
+desc STUDENT;
+desc DEPARTMENT;
+select * from STUDENT;
+select * from DEPARTMENT;
+
+update DEPARTMENT SET dept_code=1 where dept_name='건축공학과';
+
+select ST.STUDENT_NUM, ST.NAME, ST.dept_code, DP.dept_name ,ST.KOREAN+ST.ENGLISH+ST.MATH sumscore  from STUDENT ST
+join DEPARTMENT DP ON ST.dept_code=DP.dept_code;

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B8343E5-4EA6-D578-BE09-31F3D8EC0690" containerWithKeyObject="DA006B74-E08C-6FDA-F7D7-CB8DC6F81832" localFKIndex="24BBF0F2-D058-28B0-0845-3D231A081A0F" name="STUDENT_DEPT_CODE_FK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>STUDENT_DEPT_CODE_FK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>347A9C38-542A-D1E5-E9BB-E6A630FDE96E</importedID>
+<referredTableLongName>HR.DEPARTMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F2DD7128-CD83-3D36-0AB4-DC90D7AAB735</referredTableID>
+<keyObject>DA5EC2B7-C05C-D623-B27C-D9E84E1FD85E</keyObject>
+<referredKeyID>DA5EC2B7-C05C-D623-B27C-D9E84E1FD85E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>DEPT_CODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

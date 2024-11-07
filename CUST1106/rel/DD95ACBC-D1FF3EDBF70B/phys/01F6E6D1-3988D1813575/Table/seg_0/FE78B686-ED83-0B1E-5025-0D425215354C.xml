@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LOCATIONS" directorySegmentName="seg_0" id="FE78B686-ED83-0B1E-5025-0D425215354C">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>82B9A086-23B1-E146-E435-7DFBB8F7E338</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CITY" id="094D46F0-20B1-A97C-10DA-195C83F09EB9">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSTAL_CODE" id="253ADF81-0FFB-111B-3E99-5B74743AD711">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ID" id="4D062016-8B43-AD0C-CF67-6F8B189FADA6">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STREET_ADDRESS" id="71D76C13-54F8-3A65-2D20-577D96513A6B">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATE_PROVINCE" id="8FFE46F3-AFBD-D0F0-5C7A-202A067EFD04">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION_ID" id="B7AD2C5C-504D-93B4-ABD1-296D9DC958DB">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_STATE_PROVINCE_IX" id="07813B4D-2CEE-78CA-FB9E-11F936AF7A98">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_CITY_IX" id="1A4A08B7-1217-62FE-B646-6721A67A6506">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_ID_PK" id="2E6417A7-604F-AE28-6DC4-78768A88F337">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LOC_COUNTRY_IX" id="FA3B50BB-D627-9F60-8653-9BE596D1CB6B">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="LOC_C_ID_FK" id="29A84A42-195C-02DA-A4E3-B2E1E97DA648">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LOC_ID_PK" id="1FAE856D-40C1-5CE7-0545-5CD6554588AE">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<existingIndex>2E6417A7-604F-AE28-6DC4-78768A88F337</existingIndex>
+<indexSegment>941C218D-E44A-7CAC-253A-25190C0A7C98</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
