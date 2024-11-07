@@ -77,7 +77,7 @@ insert into dept select * from departments;
 
 
 create table STUDENT(
-student_num NUMBER(8),
+student_num NUMBER(8),--pk
 name VARCHAR(5) NOT NULL,
 korean NUMBER(3) default 0 NOT NULL,
 english NUMBER(3) default 0 NOT NULL,
@@ -86,7 +86,7 @@ sum NUMBER(3) default 0 NOT NULL,
 avg NUMBER(3) default 0 NOT NULL
 );
 alter table STUDENT MODIFY name VARCHAR(15);
-alter table STUDENT ADD dept_code number(4);
+alter table STUDENT ADD dept_code number(4); --fk
 alter table STUDENT ADD CONSTRAINT STUDENT_student_num_pk PRIMARY KEY(student_num);
 alter table STUDENT ADD CONSTRAINT STUDENT_dept_code_fk FOREIGN KEY(dept_code) REFERENCES DEPARTMENT(dept_code);
 alter table STUDENT DROP CONSTRAINT STUDENT_dept_code_fk;
@@ -95,16 +95,16 @@ insert into STUDENT VALUES(00000003,'김민석3',50,50,50,0,0,1);
 insert into STUDENT(student_num, name, dept_code) VALUES(00000008,'김민석8',1);
 
 
---drop TRIGGER UPDATE_dept_code;
+drop TRIGGER UPDATE_dept_code;
 --외래키 업데이트 트리거
-CREATE TRIGGER UPDATE_dept_code
-AFTER UPDATE ON DEPARTMENT
-FOR EACH ROW
-BEGIN
-    UPDATE STUDENT
-    SET dept_code = :NEW.dept_code
-    WHERE dept_code = :OLD.dept_code;
-END;
+--CREATE TRIGGER UPDATE_dept_code
+--AFTER UPDATE ON DEPARTMENT
+--FOR EACH ROW
+--BEGIN
+--    UPDATE STUDENT
+--    SET dept_code = :NEW.dept_code
+--    WHERE dept_code = :OLD.dept_code;
+--END;
 
 
 
@@ -125,3 +125,17 @@ update DEPARTMENT SET dept_code=1 where dept_name='건축공학과';
 
 select ST.STUDENT_NUM, ST.NAME, ST.dept_code, DP.dept_name ,ST.KOREAN+ST.ENGLISH+ST.MATH sumscore  from STUDENT ST
 join DEPARTMENT DP ON ST.dept_code=DP.dept_code;
+
+select EMPLOYEE_ID, FIRST_NAME, JOB_ID,DEPARTMENT_ID,DEPARTMENT_NAME,
+CASE
+WHEN DEPARTMENT_ID=20 THEN salary*1.05
+WHEN DEPARTMENT_ID=30 THEN salary*1.10
+WHEN DEPARTMENT_ID=40 THEN salary*1.15
+WHEN DEPARTMENT_ID=60 THEN salary*1.20
+else sALARY
+END as salary
+
+from EMPLOYEES
+;
+select * from EMPLOYEES;
+
