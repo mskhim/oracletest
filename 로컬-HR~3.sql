@@ -1,5 +1,22 @@
 desc test;
 drop table books;
+SELECT * FROM BOOKS;
+create or replace procedure book_price_proc(vid in books.id%type, incre in number, VMSG OUT VARCHAR2)
+is
+VBOOKS_RT BOOKS%ROWTYPE;
+begin
+update books set price=price+INCRE
+where id=vid;
+COMMIT;
+SELECT * INTO VBOOKS_RT FROM BOOKS WHERE id=vid;
+VMSG := VBOOKS_RT.ID||'번 책의 인상 금액은'||INCRE||'이고, 총 금액은 '|| VBOOKS_RT.PRICE||'입니다.';
+DBMS_OUTPUT.PUT_LINE(VMSG);
+end;
+/
+
+VARIABLE MSG VARCHAR2(100);
+EXECUTE book_price_proc(3,10000,:MSG);
+
 CREATE TABLE books (
 id number(4), 
 title varchar2(50), 
