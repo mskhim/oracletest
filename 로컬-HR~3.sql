@@ -67,9 +67,14 @@ create table student2(
 code number(5),
 name varchar2(10),
 birth date,
-grade number(3)
+kor number(3),
+math number(3),
+eng number(3),
+total number(3),
+avg number(5,2),
+rank number(3)
 );
-alter table student2 modify avg number(5,2);
+alter table student2 modify birth varchar2(30);
 alter table student2 add constraint STUDENT2_CODE_PK primary key(code);
 alter table student2 add rank number(3);
 delete from student2;
@@ -90,7 +95,7 @@ end;
 /
 execute STU_CAL_PROC;
 
---삭제시 쓰레기통에 넣어주느 트리거
+--삭제시 쓰레기통에 넣어주는 트리거
 CREATE OR REPLACE TRIGGER STU_DEL_TRG
 BEFORE DELETE
 ON
