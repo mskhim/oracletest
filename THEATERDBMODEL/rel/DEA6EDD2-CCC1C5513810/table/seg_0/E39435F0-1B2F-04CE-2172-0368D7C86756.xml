@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E39435F0-1B2F-04CE-2172-0368D7C86756" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="PLAYING">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>PLAYING</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="1AB78A58-52B6-CB4E-650A-70388313554F">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>PLAYING</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HALL_NO" id="73708CAC-5861-7552-7A16-9A1D4FC1908F">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>PLAYING</sourceObjSchema>
+<sourceObjName>HALL_NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EFAA95B-B5E2-D876-6231-16A8A26FCC24" referredColumn="A55ED162-7C18-E5EF-C113-71D642172F49"/>
+</associations>
+</Column>
+<Column name="CINEMA_NO" id="7D5A7467-5E4C-502F-0039-03942B54BFDA">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>PLAYING</sourceObjSchema>
+<sourceObjName>CINEMA_NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8B03726B-2CC3-F170-453D-4BFC98C10B9B" referredColumn="BEA65836-241F-B0CF-80DC-91C25BD53B6D"/>
+</associations>
+</Column>
+<Column name="STARTTIME" id="7A604D93-32D7-3066-FB9E-64367EAC40C7">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>PLAYING</sourceObjSchema>
+<sourceObjName>STARTTIME</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REMAIN" id="CB63575B-3B91-3C44-E108-AD6658F4F042">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>PLAYING</sourceObjSchema>
+<sourceObjName>REMAIN</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="F4DBD100-12E8-01A5-251A-FEE069A154DC">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>PLAYING</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>0    --상영상태</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18F60037-16D6-959D-2A2B-9F0DB2C4D7C8" name="PLAING_NO_PK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>PLAING_NO_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AB78A58-52B6-CB4E-650A-70388313554F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="096501FD-721B-9570-CB5B-12DBFCF9094B" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="PLAING_NO_PK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>PLAING_NO_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AB78A58-52B6-CB4E-650A-70388313554F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B599DD96-5D42-927C-7AA6-B73B13938605" name="PLAING_CINEMA_NO_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D5A7467-5E4C-502F-0039-03942B54BFDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB765A93-4796-0FF4-29ED-254B236BFBD8" name="PLAING_HALL_NO_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73708CAC-5861-7552-7A16-9A1D4FC1908F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

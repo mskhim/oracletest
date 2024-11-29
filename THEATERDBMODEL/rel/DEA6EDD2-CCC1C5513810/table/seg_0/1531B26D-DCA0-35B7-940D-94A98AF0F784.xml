@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1531B26D-DCA0-35B7-940D-94A98AF0F784" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="HALL">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>HALL</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="A55ED162-7C18-E5EF-C113-71D642172F49">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>HALL</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEATS" id="CF6F1E7E-B5D6-1AC6-A589-397313C66B33">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>HALL</sourceObjSchema>
+<sourceObjName>SEATS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="433DDEE1-4714-BAD4-4CC8-B627DE748CCD">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>HALL</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF21C842-80B3-5E69-6945-8D60CFC05595" name="HALL_NO_PK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>HALL_NO_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A55ED162-7C18-E5EF-C113-71D642172F49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B36C9BA7-449B-1DA5-1A5B-C4B122A1E7FF" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="HALL_NO_PK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>HALL_NO_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A55ED162-7C18-E5EF-C113-71D642172F49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

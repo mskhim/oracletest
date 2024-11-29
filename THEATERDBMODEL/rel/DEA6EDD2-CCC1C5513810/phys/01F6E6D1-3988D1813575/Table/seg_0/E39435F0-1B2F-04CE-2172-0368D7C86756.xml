@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PLAYING" directorySegmentName="seg_0" id="E39435F0-1B2F-04CE-2172-0368D7C86756">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5E300B0D-B176-47B5-A1D2-68A227FD8DDC</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NO" id="1AB78A58-52B6-CB4E-650A-70388313554F">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HALL_NO" id="73708CAC-5861-7552-7A16-9A1D4FC1908F">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STARTTIME" id="7A604D93-32D7-3066-FB9E-64367EAC40C7">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CINEMA_NO" id="7D5A7467-5E4C-502F-0039-03942B54BFDA">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REMAIN" id="CB63575B-3B91-3C44-E108-AD6658F4F042">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="F4DBD100-12E8-01A5-251A-FEE069A154DC">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<defaultValue>0    --상영상태</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PLAING_NO_PK" id="096501FD-721B-9570-CB5B-12DBFCF9094B">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PLAING_HALL_NO_FK" id="AB765A93-4796-0FF4-29ED-254B236BFBD8">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PLAING_CINEMA_NO_FK" id="B599DD96-5D42-927C-7AA6-B73B13938605">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PLAING_NO_PK" id="18F60037-16D6-959D-2A2B-9F0DB2C4D7C8">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<existingIndex>096501FD-721B-9570-CB5B-12DBFCF9094B</existingIndex>
+<indexSegment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

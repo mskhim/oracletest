@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="USERS" directorySegmentName="seg_0" id="D186B56C-8BA2-BCDA-1709-648CE1E89344">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>USERS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+</TableSpaceOraclev10g>

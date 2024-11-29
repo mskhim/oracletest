@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C45E9EA-AD3F-CEF8-D79C-77520FAF0411" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="CUST">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUST</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>E28B9D85-B983-AB7D-F4B7-17842AF8A654</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODE" id="47A7A650-270D-2BE2-4401-4259E79012BB">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D3810C6F-33F2-6E5C-43C8-BA3281178F83</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="41C9985D-7574-ECDA-C526-78E8D1BDBC5F">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D3250574-13EC-A225-1CF6-2F5D628F473B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="697A3055-802A-1780-04BF-A687E782B84A">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>GENDER</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>59D084CD-0CAB-14BB-1FFF-CED53B57149A</importedID>
+<constraintName>CUST_GENDER_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;M&apos;" description=""/>
+<valueDef value="&apos;W&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH" id="A28904F0-D800-FE42-C7DB-BA7D6573AB69">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>BIRTH</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>4C21A3DB-809F-1EC2-4C6F-D68EE06598B1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PNUM" id="017417C8-E776-3D9D-1E97-5672A2430AE0">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>PNUM</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>4989A528-4B71-EA74-BC2F-FC4F7B0E6849</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="4ED6D302-4DAB-8586-B941-C32E83797ADD">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>E91D6D02-BD94-5094-29BF-8D4BEDDFA721</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POINT" id="D4F054E4-843E-DD9A-746C-8FB12EF5B6BF">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>CUST</sourceObjSchema>
+<sourceObjName>POINT</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D90D0587-03E7-2BD0-8AC1-DCD141749708</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9FFA9F26-51E8-6997-06F0-CF5B7CAEB4BF" name="CUST_CODE_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUST_CODE_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>26C31543-573A-9ACB-26A9-658D2A419858</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47A7A650-270D-2BE2-4401-4259E79012BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1D30235-A161-CC3F-5299-4423A3EDBB77" name="CUST_PNUM_UK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUST_PNUM_UK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>827189A5-70C1-F71A-B582-6A2991C1858E</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="017417C8-E776-3D9D-1E97-5672A2430AE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="817ECB01-335D-5FDB-F8C8-573287D1E982" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="CUST_CODE_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUST_CODE_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D89E6550-8360-E8ED-1D1D-3E26F7132478</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47A7A650-270D-2BE2-4401-4259E79012BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="468FF81E-4FEA-5A3D-BCC1-9E132D00310C" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="CUST_PNUM_UK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>CUST_PNUM_UK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>99321E6E-870B-14E7-D7C6-BFCFB9FE89BD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="017417C8-E776-3D9D-1E97-5672A2430AE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

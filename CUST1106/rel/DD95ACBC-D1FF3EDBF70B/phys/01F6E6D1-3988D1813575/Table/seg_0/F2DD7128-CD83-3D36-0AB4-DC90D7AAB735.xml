@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DEPARTMENT" directorySegmentName="seg_0" id="F2DD7128-CD83-3D36-0AB4-DC90D7AAB735">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>82B9A086-23B1-E146-E435-7DFBB8F7E338</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPT_CODE" id="26478C72-5785-0C4B-1B2E-F90799AB9F31">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPT_NAME" id="A74A2EEC-ADD3-D115-536B-F40A83B68826">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPARTMENT_DEPT_CODE_PK" id="4B69081D-4CE1-A7AE-7F77-CE0B226B4E3A">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTMENT_DEPT_CODE_PK" id="DA5EC2B7-C05C-D623-B27C-D9E84E1FD85E">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<segment>941C218D-E44A-7CAC-253A-25190C0A7C98</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<existingIndex>4B69081D-4CE1-A7AE-7F77-CE0B226B4E3A</existingIndex>
+<indexSegment>941C218D-E44A-7CAC-253A-25190C0A7C98</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

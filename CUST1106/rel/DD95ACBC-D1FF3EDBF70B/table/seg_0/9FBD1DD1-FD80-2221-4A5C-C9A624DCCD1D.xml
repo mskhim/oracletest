@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9FBD1DD1-FD80-2221-4A5C-C9A624DCCD1D" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="DEPARTMENTS">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENTS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departments table that shows details of departments where employees
+work. Contains 27 rows; references with locations, employees, and job_history tables.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>99874F97-E37C-E23C-EB6A-1C22C28FD69A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_ID" id="C2536BB2-17F2-39F4-D0B7-D97B7C1651E3">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key column of departments table.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>269A80FD-7D3C-D310-265E-37AE1BFB7C94</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="863DE9E6-77D2-2C89-341A-1BA2BC74334F">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_NAME</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows name of a department. Administration,
+Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public
+Relations, Sales, Finance, and Accounting. ]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>16E1E96D-8F7A-8EDA-B346-1DCFBC1BEEE8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>DEPT_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="MANAGER_ID" id="24888734-6331-C548-D273-432AA7FD63E8">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>764C309D-95BC-71DF-5B12-AFD44B82EA9B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="702615DB-2FDE-B561-50EB-C13761F7E40E" referredColumn="5D588AFE-8BD3-6D95-821B-39510FDE5FF1"/>
+</associations>
+</Column>
+<Column name="LOCATION_ID" id="BAA7C5AA-8190-7E8B-C4BC-651959302997">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Location id where a department is located. Foreign key to location_id column of locations table.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>A446F570-174F-DD9F-BF79-FC4C0FEDB442</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E158CD31-7729-C9D2-2F3B-4C20B6FE49DB" referredColumn="B7AD2C5C-504D-93B4-ABD1-296D9DC958DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19F11C2A-5BEB-BA84-5998-3FE7E359BFA3" name="DEPT_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>6AF2EB90-9BC9-053C-24EB-C104DDAB8A74</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2536BB2-17F2-39F4-D0B7-D97B7C1651E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89AE84C5-2251-1641-E79A-E8E46F0306F9" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="DEPT_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>72A01FC9-CAAF-A8BA-E75F-E6188CFE3E90</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2536BB2-17F2-39F4-D0B7-D97B7C1651E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87F7F34A-3448-8851-C81F-E668B0EE776A" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="DEPT_LOCATION_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_LOCATION_IX</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>881DC0F8-FC7A-B74B-6F31-361903C9C824</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAA7C5AA-8190-7E8B-C4BC-651959302997"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B90F67B-2EB2-DA1D-FCDC-9AD41A5A4230" name="DEPT_LOC_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAA7C5AA-8190-7E8B-C4BC-651959302997"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A94CFDDD-9B59-065B-D377-201A208158F0" name="DEPT_MGR_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24888734-6331-C548-D273-432AA7FD63E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

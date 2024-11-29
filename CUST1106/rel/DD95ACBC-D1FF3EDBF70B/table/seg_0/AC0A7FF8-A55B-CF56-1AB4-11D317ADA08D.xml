@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC0A7FF8-A55B-CF56-1AB4-11D317ADA08D" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="JOBS">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOBS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[jobs table with job titles and salary ranges. Contains 19 rows.
+References with employees and job_history table.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>6D2EAC32-F4CE-A057-1E95-4B5FEB71095A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="JOB_ID" id="F368D8DA-367E-5C02-E803-99C243DB1463">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of jobs table.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>3B161C01-605A-DE6F-C9D1-EF4DC420A9E0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_TITLE" id="3CFDD2B5-1172-8E69-71FD-1CE192DE413F">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>JOB_TITLE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>6C623E24-B6F1-2EE1-5094-752B2D74CC51</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 BYTE</dataTypeSize>
+<ownDataTypeParameters>35 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JOB_TITLE_NN</notNullConstraintName>
+</Column>
+<Column name="MIN_SALARY" id="2C71F4A3-9DDE-CA3B-9782-BA1EEA2DF067">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>MIN_SALARY</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Minimum salary for a job title.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>FF1AAFC0-529F-8906-DEAB-9293D31C81D8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_SALARY" id="9BE6E94E-8A5F-0804-9DCD-45DFFE576F1B">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>JOBS</sourceObjSchema>
+<sourceObjName>MAX_SALARY</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Maximum salary for a job title]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>E62CB71B-E763-8638-E4E1-1BBFA362FC3A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEE8510D-D079-5AD7-7403-7FDE19772596" name="JOB_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>AE26EFF7-4966-3F1A-4B0E-02633091EB17</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F368D8DA-367E-5C02-E803-99C243DB1463"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D1B8337-7450-8ECA-51A0-697B4F3B14DF" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="JOB_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>303D57BA-06DE-DA51-0407-B4CA491615C3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F368D8DA-367E-5C02-E803-99C243DB1463"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

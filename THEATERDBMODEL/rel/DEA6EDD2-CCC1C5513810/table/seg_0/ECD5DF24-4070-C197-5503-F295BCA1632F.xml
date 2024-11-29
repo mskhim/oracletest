@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECD5DF24-4070-C197-5503-F295BCA1632F" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="BOOKING">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>BOOKING</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="9D7CF2DE-4982-1EBF-F564-3876BC5B6DD6">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLAYING_NO" id="F03A8D13-B2CB-3AD3-8965-ED1E7EC588D7">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>PLAYING_NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA27123E-7040-C228-DF2F-5EC89D3CABFA" referredColumn="1AB78A58-52B6-CB4E-650A-70388313554F"/>
+</associations>
+</Column>
+<Column name="CUSTOMER_NO" id="2BF164B2-805E-9242-4E55-C913705061ED">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>CUSTOMER_NO</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB2185F2-5BD4-C053-27E7-5713639EA181" referredColumn="CE5812CC-0FD8-CC91-E532-AF319D24E65C"/>
+</associations>
+</Column>
+<Column name="CODE" id="8BBB548F-31DC-311C-13D7-01B67C1DF631">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="256248A2-54F8-CD5B-1C29-9744A87778AB">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="14321F15-50CC-4EC1-93BD-4B61C0B47235">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOOKING_DATE" id="EFE802FB-F4F7-B9FB-328F-65203387A4BD">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>BOOKING</sourceObjSchema>
+<sourceObjName>BOOKING_DATE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8222461A-BE7D-A429-2A0D-BCF87729825E" name="BOOKING_NO_PK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>BOOKING_NO_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D7CF2DE-4982-1EBF-F564-3876BC5B6DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAE76D38-E7F1-E974-F04B-0CC61821A495" name="BOOKING_CODE_UQ">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>BOOKING_CODE_UQ</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BBB548F-31DC-311C-13D7-01B67C1DF631"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50D0B86D-B0B9-8D08-F19A-E818ED7D710A" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="BOOKING_CODE_UQ">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>BOOKING_CODE_UQ</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BBB548F-31DC-311C-13D7-01B67C1DF631"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC06564A-76A3-15A5-B25E-88447F10C626" schemaObject="31448AB3-B734-ECA2-8F4F-16177D047E12" name="BOOKING_NO_PK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>BOOKING_NO_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D7CF2DE-4982-1EBF-F564-3876BC5B6DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D48C4D5D-5B95-DE2A-9F03-ED5223BE8655" name="BOOKING_CUSTOMER_NO_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BF164B2-805E-9242-4E55-C913705061ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FF2EAED-FEC4-3D80-B399-3ED40D90669E" name="BOOKING_PLAYING_NO_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F03A8D13-B2CB-3AD3-8965-ED1E7EC588D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="HALL" directorySegmentName="seg_0" id="1531B26D-DCA0-35B7-940D-94A98AF0F784">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5E300B0D-B176-47B5-A1D2-68A227FD8DDC</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRICE" id="433DDEE1-4714-BAD4-4CC8-B627DE748CCD">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO" id="A55ED162-7C18-E5EF-C113-71D642172F49">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEATS" id="CF6F1E7E-B5D6-1AC6-A589-397313C66B33">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="HALL_NO_PK" id="B36C9BA7-449B-1DA5-1A5B-C4B122A1E7FF">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="HALL_NO_PK" id="EF21C842-80B3-5E69-6945-8D60CFC05595">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<existingIndex>B36C9BA7-449B-1DA5-1A5B-C4B122A1E7FF</existingIndex>
+<indexSegment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

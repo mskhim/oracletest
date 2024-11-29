@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HR" directorySegmentName="seg_0" id="E4EEF85D-0659-4607-1CA0-44F67BF7ACDC">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjName>HR</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:42:38 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<defTableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</defTableSpace>
+<privileges>CREATE DATABASE LINK, CREATE SEQUENCE, CREATE VIEW, CREATE SYNONYM, UNLIMITED TABLESPACE, ALTER SESSION, CREATE SESSION</privileges>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="E818DFBA-2A71-2B72-098D-86BE0AB7F4C5">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</QuotaItem>
+</quotaItems>
+</UserOraclev10g>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CINEMA" directorySegmentName="seg_0" id="AF903970-5014-F4C3-DD45-84F0569E922D">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5E300B0D-B176-47B5-A1D2-68A227FD8DDC</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RUNNINGTIME" id="320A9D3E-6786-7917-206D-41C978C49230">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="55349C21-13F9-C130-2F84-115B95D4493A">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO" id="BEA65836-241F-B0CF-80DC-91C25BD53B6D">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="D9E792CF-8A94-20A0-AEC8-92F2671905C6">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<defaultValue>0        --현재상영여부</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CINEMA_NO_PK" id="0EC391D7-FD12-4F25-7C6C-8E052D003907">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CINEMA_NO_PK" id="BE8EB2A9-0481-6F08-3F47-0F9C9827AA30">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<existingIndex>0EC391D7-FD12-4F25-7C6C-8E052D003907</existingIndex>
+<indexSegment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

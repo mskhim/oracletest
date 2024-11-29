@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE78B686-ED83-0B1E-5025-0D425215354C" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="LOCATIONS">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOCATIONS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Locations table that contains specific address of a specific office,
+warehouse, and/or production site of a company. Does not store addresses /
+locations of customers. Contains 23 rows; references with the
+departments and countries tables. ]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>20AEA3D9-3CCE-4D4B-7288-89108B780DB5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION_ID" id="B7AD2C5C-504D-93B4-ABD1-296D9DC958DB">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Primary key of locations table]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D00F325B-D4C1-6798-7776-A931EC49CAC3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_ADDRESS" id="71D76C13-54F8-3A65-2D20-577D96513A6B">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>STREET_ADDRESS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street address of an office, warehouse, or production site of a company.
+Contains building number and street name]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>0578EEA0-3972-C187-0B09-7A7B9F94CA9B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="253ADF81-0FFB-111B-3E99-5B74743AD711">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>POSTAL_CODE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Postal code of the location of an office, warehouse, or production site
+of a company. ]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>0C4444E6-5006-B72B-2AF4-A6268B17A38D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="094D46F0-20B1-A97C-10DA-195C83F09EB9">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[A not null column that shows city where an office, warehouse, or
+production site of a company is located. ]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>EB88CE6F-F471-9215-9305-2F7855378184</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>LOC_CITY_NN</notNullConstraintName>
+</Column>
+<Column name="STATE_PROVINCE" id="8FFE46F3-AFBD-D0F0-5C7A-202A067EFD04">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>STATE_PROVINCE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[State or Province where an office, warehouse, or production site of a
+company is located.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>FE41A987-1304-E244-041A-35CFB05FC6F8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ID" id="4D062016-8B43-AD0C-CF67-6F8B189FADA6">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country where an office, warehouse, or production site of a company is
+located. Foreign key to country_id column of the countries table.]]></commentInRDBMS>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>28DFCD35-8A04-A718-0366-05A7E96AE4ED</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88354538-5491-C56F-4578-CBDCCE8BA820" referredColumn="38EA820B-3746-8639-4EED-5A8E09E322B3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FAE856D-40C1-5CE7-0545-5CD6554588AE" name="LOC_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>968EB184-0DC6-78D2-C2F8-39F527D241D2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7AD2C5C-504D-93B4-ABD1-296D9DC958DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A4A08B7-1217-62FE-B646-6721A67A6506" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="LOC_CITY_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_CITY_IX</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>07D0CD0B-42FD-3E6C-A477-C1F3FE587245</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="094D46F0-20B1-A97C-10DA-195C83F09EB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA3B50BB-D627-9F60-8653-9BE596D1CB6B" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="LOC_COUNTRY_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_COUNTRY_IX</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>434CD084-EFCD-5AFB-3255-C2DF65A89E88</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D062016-8B43-AD0C-CF67-6F8B189FADA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E6417A7-604F-AE28-6DC4-78768A88F337" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="LOC_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>497CE6C2-6F18-0FCA-86BE-0FFA050528D4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7AD2C5C-504D-93B4-ABD1-296D9DC958DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07813B4D-2CEE-78CA-FB9E-11F936AF7A98" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="LOC_STATE_PROVINCE_IX">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LOC_STATE_PROVINCE_IX</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>F2ABA589-5321-C9E2-B7B5-2E0326361974</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FFE46F3-AFBD-D0F0-5C7A-202A067EFD04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29A84A42-195C-02DA-A4E3-B2E1E97DA648" name="LOC_C_ID_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D062016-8B43-AD0C-CF67-6F8B189FADA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="BOOKING" directorySegmentName="seg_0" id="ECD5DF24-4070-C197-5503-F295BCA1632F">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5E300B0D-B176-47B5-A1D2-68A227FD8DDC</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRICE" id="14321F15-50CC-4EC1-93BD-4B61C0B47235">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="256248A2-54F8-CD5B-1C29-9744A87778AB">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_NO" id="2BF164B2-805E-9242-4E55-C913705061ED">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="8BBB548F-31DC-311C-13D7-01B67C1DF631">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO" id="9D7CF2DE-4982-1EBF-F564-3876BC5B6DD6">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BOOKING_DATE" id="EFE802FB-F4F7-B9FB-328F-65203387A4BD">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLAYING_NO" id="F03A8D13-B2CB-3AD3-8965-ED1E7EC588D7">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:27 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="BOOKING_CODE_UQ" id="50D0B86D-B0B9-8D08-F19A-E818ED7D710A">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="BOOKING_NO_PK" id="DC06564A-76A3-15A5-B25E-88447F10C626">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<schemaObject>31448AB3-B734-ECA2-8F4F-16177D047E12</schemaObject>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BOOKING_PLAYING_NO_FK" id="0FF2EAED-FEC4-3D80-B399-3ED40D90669E">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BOOKING_CUSTOMER_NO_FK" id="D48C4D5D-5B95-DE2A-9F03-ED5223BE8655">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BOOKING_NO_PK" id="8222461A-BE7D-A429-2A0D-BCF87729825E">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<existingIndex>DC06564A-76A3-15A5-B25E-88447F10C626</existingIndex>
+<indexSegment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="BOOKING_CODE_UQ" id="DAE76D38-E7F1-E974-F04B-0CC61821A495">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:28 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<segment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</segment>
+<tableSpace>D186B56C-8BA2-BCDA-1709-648CE1E89344</tableSpace>
+<existingIndex>50D0B86D-B0B9-8D08-F19A-E818ED7D710A</existingIndex>
+<indexSegment>09C88D6B-73FA-86ED-6C7F-1F0A444E5CA9</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

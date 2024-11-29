@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA006B74-E08C-6FDA-F7D7-CB8DC6F81832" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="STUDENT">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>A6D6AA1F-9A39-88E2-FC1F-D6BDEE3F2D60</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENT_NUM" id="6B071C34-F572-C98C-17E7-36DF751128CC">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>STUDENT_NUM</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>A7322825-734E-B2E9-61B2-163434C4B695</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="5EAC9C05-8051-1DE1-D90F-30B842ACAC69">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>2E787CE0-E53C-88B8-F7F2-2742E61F7C8F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KOREAN" id="838FCF65-7342-B623-83C0-6DF20D79D241">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>KOREAN</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>2D2D940D-7555-794D-AF60-9D6DC98CFC5E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENGLISH" id="CCD783DB-19FA-F846-FDF4-FC0DAD0DB95D">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ENGLISH</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>CFB8350C-ABFC-BA54-06A4-51EB6786124E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATH" id="861834E8-7F07-4542-913A-34112E6FBAAA">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>MATH</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D02C81DF-92E4-DA2B-A177-4E853D4488C3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUM" id="CB45E58C-F01D-36DE-F1DB-819417DBAB39">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SUM</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>6A6F2F62-9480-65E8-4E04-065BDF1600FA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVG" id="F8AF9000-EA43-BBE9-D12B-DFDA2C9F06AE">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>AVG</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>F6068BCD-4511-7499-E1CE-9650DC1C815F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPT_CODE" id="04D644C4-AAB2-B004-EB65-E28D7B175B92">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>DEPT_CODE</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D33FEAFA-57AC-3700-92A9-EF7B8261F554</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B8343E5-4EA6-D578-BE09-31F3D8EC0690" referredColumn="26478C72-5785-0C4B-1B2E-F90799AB9F31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24BBF0F2-D058-28B0-0845-3D231A081A0F" name="STUDENT_DEPT_CODE_FK">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 08:28:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04D644C4-AAB2-B004-EB65-E28D7B175B92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

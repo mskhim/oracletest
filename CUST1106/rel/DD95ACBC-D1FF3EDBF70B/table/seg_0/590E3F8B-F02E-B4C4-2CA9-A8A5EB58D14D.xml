@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="590E3F8B-F02E-B4C4-2CA9-A8A5EB58D14D" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="REGIONS">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REGIONS</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>68ED27BE-F516-0354-A08B-B38AA5349D70</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REGION_ID" id="104CAC30-B3C2-8CC6-790E-2DA20028DFDD">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>REGIONS</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>D26CA049-77FA-395B-E255-0639DD122FD9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>REGION_ID_NN</notNullConstraintName>
+</Column>
+<Column name="REGION_NAME" id="6103EADF-CFC9-5D28-AA2B-CAB56DAA144C">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>REGIONS</sourceObjSchema>
+<sourceObjName>REGION_NAME</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>A804038C-D850-8785-C26A-0CC539585D1C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5ACA1FB8-2B6B-7D59-5BC1-CAFEED23A41D" name="REG_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REG_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>9A2EE773-BE9E-55C0-8C01-6157019F979E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="104CAC30-B3C2-8CC6-790E-2DA20028DFDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="271F5428-9962-86C8-814E-7D488899B18C" schemaObject="A5B5C3B4-C84F-10D0-3668-CC00C0695284" name="REG_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REG_ID_PK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<importedID>752C8BE8-CEB3-509D-3FAB-AB60CBDE79A6</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="104CAC30-B3C2-8CC6-790E-2DA20028DFDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB2185F2-5BD4-C053-27E7-5713639EA181" containerWithKeyObject="ECD5DF24-4070-C197-5503-F295BCA1632F" localFKIndex="D48C4D5D-5B95-DE2A-9F03-ED5223BE8655" name="BOOKING_CUSTOMER_NO_FK">
+<sourceConnName>로컬-THEATERDB</sourceConnName>
+<sourceObjSchema>THEATERDB</sourceObjSchema>
+<sourceObjName>BOOKING_CUSTOMER_NO_FK</sourceObjName>
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-23 00:22:29 UTC</createdTime>
+<ownerDesignName>THEATERDBMODEL</ownerDesignName>
+<referredTableLongName>THEATERDB.CUSTOMER</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>79B2162F-EACC-AE0A-0454-B34BCFDC9883</referredTableID>
+<keyObject>08F53741-72CD-3B8A-E6D1-50A1FEA2C54F</keyObject>
+<referredKeyID>08F53741-72CD-3B8A-E6D1-50A1FEA2C54F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CUST" directorySegmentName="seg_0" id="6C45E9EA-AD3F-CEF8-D79C-77520FAF0411">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:39 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8DE99C04-8CA4-1FEC-153F-E87A73E9CE5D</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PNUM" id="017417C8-E776-3D9D-1E97-5672A2430AE0">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="41C9985D-7574-ECDA-C526-78E8D1BDBC5F">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="47A7A650-270D-2BE2-4401-4259E79012BB">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="4ED6D302-4DAB-8586-B941-C32E83797ADD">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENDER" id="697A3055-802A-1780-04BF-A687E782B84A">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BIRTH" id="A28904F0-D800-FE42-C7DB-BA7D6573AB69">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POINT" id="D4F054E4-843E-DD9A-746C-8FB12EF5B6BF">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUST_PNUM_UK" id="468FF81E-4FEA-5A3D-BCC1-9E132D00310C">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>8E139AAA-DD26-407E-802A-BE5880D5D359</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUST_CODE_PK" id="817ECB01-335D-5FDB-F8C8-573287D1E982">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<schemaObject>A5B5C3B4-C84F-10D0-3668-CC00C0695284</schemaObject>
+<segment>8E139AAA-DD26-407E-802A-BE5880D5D359</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUST_CODE_PK" id="9FFA9F26-51E8-6997-06F0-CF5B7CAEB4BF">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<segment>8E139AAA-DD26-407E-802A-BE5880D5D359</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<existingIndex>817ECB01-335D-5FDB-F8C8-573287D1E982</existingIndex>
+<indexSegment>8E139AAA-DD26-407E-802A-BE5880D5D359</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CUST_PNUM_UK" id="A1D30235-A161-CC3F-5299-4423A3EDBB77">
+<createdBy>SAMSUNG</createdBy>
+<createdTime>2024-11-06 06:43:40 UTC</createdTime>
+<ownerDesignName>CUST1106</ownerDesignName>
+<segment>8E139AAA-DD26-407E-802A-BE5880D5D359</segment>
+<tableSpace>508FFFD6-D066-336C-C875-B6B0E8DAE02F</tableSpace>
+<existingIndex>468FF81E-4FEA-5A3D-BCC1-9E132D00310C</existingIndex>
+<indexSegment>8E139AAA-DD26-407E-802A-BE5880D5D359</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>
